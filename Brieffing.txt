@@ -1,0 +1,55 @@
+Tela inicial, visualização dos cards iniciais: Caso seja colocado pequena, o nome fica cortando[OK]
+
+
+**** Quando está em modo de edição(inserção ou atualização) e sai da pagina, não tem nenhum aviso de "está saindo da pagina. Deseja sair sem salvar as alterações?"
+**** Campos de textos estão aceitado somente números ou caracteres especiais, não está sendo validado sem letra válida do alfabeto[OK]
+
+---Aluno---
+-> Nome muito comprido vai quebrar a exibição do grid geral, bem como do visualizar individual
+[Ex: BRUNO CARVALHOOOOOOOOOOOOOOOOSOBRINHOBRINOANGOANGOANGOANGOANHROQHQORHOQHRQOWORTWTWTWTWTWWTTTTTTTTTTTTTTTTTTTTWWAFATWTWTWTWQ]
+-> Ano não validado(Aceita qualquer número)
+-> Ano quebra quando adicionado letras
+-> Período validado apenas no front-end, caso seja modificado o value via inspecionar elemento, quebra o sistema
+-> Campos de textos aceitam caracteres estranhos, tipo: ¦¯_ ¦ ¦¯_ ¦¯_ ¦¯_ ¦_¦_ ¯¦¯ ¦¯¦  _¦¯ ¦¯¦ ¦  ¦¯_¦ ¯¦¦ ¦¦  ¯¦¦ ¦¯¦  _¦ ¦¯¦ ¦_¦_ ¦_¦¯¦  ¦¦  ¯¦¯ ¯?_ _¦¯ ¯¦¯ ¯?_  ¦¯_ ¦ ¦¯_ ¦_¦_¦_[OK]
+
+==============================================
+
+---Disciplinas--
+-> Nome muito comprido vai quebrar a exibição do grid geral, bem como do visualizar individual
+[Ex: BRUNO CARVALHOOOOOOOOOOOOOOOOSOBRINHOBRINOANGOANGOANGOANGOANHROQHQORHOQHRQOWORTWTWTWTWTWWTTTTTTTTTTTTTTTTTTTTWWAFATWTWTWTWQ]
+-> Campos de textos aceitam caracteres estranhos, tipo: ¦¯_ ¦ ¦¯_ ¦¯_ ¦¯_ ¦_¦_ ¯¦¯ ¦¯¦  _¦¯ ¦¯¦ ¦  ¦¯_¦ ¯¦¦ ¦¦  ¯¦¦ ¦¯¦  _¦ ¦¯¦ ¦_¦_ ¦_¦¯¦  ¦¦  ¯¦¯ ¯?_ _¦¯ ¯¦¯ ¯?_  ¦¯_ ¦ ¦¯_ ¦_¦_¦_
+
+==============================================
+
+---Turma--------
+-> Ao adicionar um nome vazio ou só com espaços não é realizado a adição, porém não há nenhum feedback visual de erro
+=======================================
+
+---Servidor----
+Nome muito comprido vai quebrar a exibição do grid geral, bem como do visualizar individual
+[Ex: BRUNO CARVALHOOOOOOOOOOOOOOOOSOBRINHOBRINOANGOANGOANGOANGOANHROQHQORHOQHRQOWORTWTWTWTWTWWTTTTTTTTTTTTTTTTTTTTWWAFATWTWTWTWQ]
+-> Siape negativo
+========================================
+Anamnese>Editar
+-> Ao tentar incluir uma pergunta com o nome somente com esoaços não há a adição da pergunta, mas também não há nenhum feedback visual de erro
+============================================
+Paciente:
+-> Salva com nome contendo só espaços, e quando isso acontece não é possível a edição do mesmo
+-> Salva com data de nascimento maior do que a data atual
+-> Salva com cpf inválido(ex: 2)
+-> Salva com numero de telefone inválido(ex: 1)
+=============================================
+Avaliação:
+Salva com nome contendo só espaços, e quando isso acontece não é possível a edição do mesmo
+Avaliação>Visualizar
+Ao adicionar um item, pode ser salvo com o nome do item contendo apenas espaços vazios
+============================================
+Usuario > Detalhes de usuario
+Nome salva contendo apenas espaços em branco no lugar do nome
+Matricula salva com valor negativo
+=============================================
+
+COM O PERFIL DE PROFESSOR, PACIENTES>ATENDIMENTO
+OS CAMPOS BIOSSEGURANÇA, PONTUALIDADE , CONHECIMENTO, HABILIDADE MANUAL ,MANEJO DO PACIENTE  ESTÃO ACEITANDO VALORES NULOS
+
+Falta testar a triagem
